@@ -19,6 +19,10 @@ section.wwd-content-page.landing-page {
                 width: 60%;
                 height: auto;
                 margin: 0 auto;
+
+                @include media-breakpoint-down(md) {
+                    width: 80%;
+                }
             }            
         }
 
@@ -26,6 +30,19 @@ section.wwd-content-page.landing-page {
 
             h1, > p {
                 text-align: center;
+            }
+
+            @include media-breakpoint-down(lg) {
+                h1 {
+                    font-size: 1.8em;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                h1 {
+                    margin-top: 20px;
+                    font-size: 1.5em;
+                }
             }
 
             div[role=form].wpcf7 {
